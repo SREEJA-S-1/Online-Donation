@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Online Donation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-wrapper">
+ <div class="nav-wrapper">
+  <div class="grad-bar"></div>
+  <nav class="navbar">
+      <img id="logo" src="data:image/jpeg;base64,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" alt="Company Logo">
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav no-search">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="registration.php">NGO</a></li>
+      <li class="nav-item"><a href="index.php">Donor</a></li>
+      <li class="nav-item"><a href="index_1.html">Blog</a></li>
+      <li class="nav-item"><a href="charity_organization.html">Charity Organization</a></li>
+    </ul>
+     <i class="fa fa-search" id="search-icon"></i>
+      <input class="search-input" type="text" placeholder="Search..">
+  </nav>
+  </div>
+            
+  <section class="headline">
+      <center>
+      <div id="content">
+          <b style="font-family: 'Lora', serif;">“We make a living by what we get.<br> We make a life by what we give.”</b>
+      </div>
+      </center>
+  </section>
+            
+</div>
+        <script>
+        $("#search-icon").click(function() {
+  $(".nav").toggleClass("search");
+  $(".nav").toggleClass("no-search");
+  $(".search-input").toggleClass("search-active");
+});
+
+$('.menu-toggle').click(function(){
+   $(".nav").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
+    </script>
+<div class="row" style="background-image: url('https://www.nawpic.com/media/2020/white-nawpic-7.jpg'); background-repeat: no-repeat; background-size: cover; height: 500px;"> 
+    <div class="column-3">
+        <div class="reveal">Donation</div><br>
+        <script>let duration = 0.8;
+let delay = 0.6;
+let revealText = document.querySelector(".reveal");
+let letters = revealText.textContent.split("");
+revealText.textContent = "";
+
+let middle = letters.filter(e => e !== " ").length / 2;
+
+letters.forEach((letter, i) => {
+  let span = document.createElement("span");
+  span.textContent = letter;
+  span.style.animationDelay = `${delay + Math.abs(i - middle) * 0.1}s`;
+  revealText.append(span);
+})</script>
+        <div class="article">
+            <p class="glowIn">
+        A donation is a gift for charity, humanitarian aid, or to benefit a cause.<br>
+            A donation may take various forms, including money, alms, services, or goods such as clothing, toys, food, or vehicles.
+                Your contributions help us serve India’s most marginalized children and ensure that they are able to go to school, get proper nutrition and healthcare and stay protected from abuse and exploitation.
+          <br>
+            <br>
+  </p>
+        </div>
+        <script>let glowInTexts = document.querySelectorAll(".glowIn");
+
+// split all text content into letters
+// for each letter, wrap it with a span
+// then let each span executes animation in sequence.
+glowInTexts.forEach(glowInText => {
+  let letters = glowInText.textContent.split("");
+  glowInText.textContent = "";
+  letters.forEach((letter, i) => {
+    let span = document.createElement("span");
+    span.textContent = letter;
+    span.style.animationDelay = `${i * 0.02}s`;
+    glowInText.append(span);
+  });
+});
+        </script>
+    </div>
+    <div class="column-4">
+        <img src="https://images.tribuneindia.com/cms/gall_content/2015/12/2015_12$largeimg07_Monday_2015_230100506.jpg" alt="things to donate" width="450px" height="400px" >
+    </div>
+</div><center>
+<img id="myImg" src="https://media.istockphoto.com/vectors/list-of-donation-items-in-doodle-style-vector-id1210142838" alt="things to donate" >
+    </center><hr class="new">
+            <div class="activities">
+                <div class="activities-text">
+                    <h2 class="black-back" style="color: #3498db">GALLERY</h2>
+                </div>
+<!-- ADD data-aos INFORMATION AS BELOW -->                
+                <div class="activities-photo1" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLsNv3mgMjH6UQ0_f2i1tfvi3vICy0Deg6ow&usqp=CAU" style="width: 350px; height: 400px">
+                    <p style="font-size: 20px;">Millions of people are starving and forced to live a life in the absence of basic amenities. They do not have food, clothes, and homes to live safe and healthy. Each and every donation is important.</p>
+                </div>
+<!-- ADD data-aos INFORMATION AS BELOW --> 
+                <div class="activities-photo2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="https://images.tribuneindia.com/cms/gall_content/2015/12/2015_12$largeimg07_Monday_2015_230100506.jpg" style="width: 350px; height: 400px">
+                    <p style="font-size: 20px;">In order to help the poor and needy, one can donate the old stuff from old clothes to appliances, furniture and other materials. Rummage through your belongings and give them away to the needy.</p>
+                </div>
+<!-- ADD data-aos INFORMATION AS BELOW --> 
+                <div class="activities-photo3" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlTzmS3_pziej0PmUTQKohI4NhW3Oj0gzbfmrUf7IijLdhspvEESDLdN6JbSj7hccg9CE&usqp=CAU" style="width: 350px; height: 400px">
+                    <p style="font-size: 20px;">Delvering through old stuff and donating does help the poor people to those who needs such stuff. You can save somebody's life by making a donation that can help people in gaining basic amenities.</p>
+                </div>
+            </div><hr class="new">
+            <section>
+                 
+<!-- ADD data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200" TO THIS ELEMENT -->      
+                <div class="about-text" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+                    <h1 style="color: #3498db">HELP US</h1>
+                    <p style="font-size: 25px;">
+Your contributions help us serve India’s most marginalized children and ensure that they are able to go to school, get proper nutrition and healthcare and stay protected from abuse and exploitation.
+
+We cannot do the work that we do without your support and it’ll need each and every one of us to come together to ensure happier childhoods for children everywhere!</p> 
+                </div>
+<!-- ADD data-aos INFORMATION AS BELOW -->
+                <div class="about-photo" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMeAPbIR2eGtgFyHnwXsk3qT6roD11FJd8hw&usqp=CAU" style="width: 500px;margin-top: 30px;">
+                </div>
+            </section><hr class="new">
+    <div class="teas" style="margin-left:20px;margin-top: 30px; margin-right: 20px "> .</div>
+    <div class="teas" style="margin-left:20px; margin-right: 20px "> .</div><br>
+<div>
+<div class="gallery">
+     <button id="myBtn"><img id="myBtn" class="mg" src="https://thumbs.dreamstime.com/b/donation-clothes-concept-vector-illustration-banners-templates-donation-clothes-concept-vector-illustration-168910728.jpg" alt="Cinque Terre" width="600" height="400">
+    <div class="desc">Your old clothes <br>is...<br> New for someone</div>
+</div> </button><!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">×</span>
+        <h3 style="color: black;">CLOTH DONATION</h3>
+
+We all are blessed to have new dresses on all occations and we buy new dresses whenever we want or like it. But what about the poor and needy? Do whenever we have thought about it? <br>They are not expecting a new dress, they are longing for a dress to wear, to cover themselves, they don't bother that is used dress or not. 
+
+Donation does not mean that you have to give money, etc..  <br><br>It is that, only the heart of giving (i.e.) whenever we buy new clothes donate a old cloth. It may be old for you but it is new for someone.    
+
+An Underprivileged Person a Pair of Clothes Is as Good as Dressing Him With Self-respect. We Distribute These Garments To poor and neady.<br><br>
+
+Who will pick up your old clothes for free?<br>
+Used clothes donations are accepted by a number of charities. Our website will help you find a charity in your area that will welcome your used book donations. Within minutes, you can schedule a fast, FREE pickup of your used cloth donations.<br>
+
+      </div>
+
+    </div>
+<script>
+    // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }</script>
+<div class="galery">
+     <button id="myBt">
+      <img class="mgs" id="myBt" src="https://media.istockphoto.com/vectors/cardboard-box-with-books-for-donations-charity-concept-hand-giving-a-vector-id1178491739?k=6&m=1178491739&s=612x612&w=0&h=Ghxi8Xx_PdKfMauI8mf3F1IELePX2BqP5V6C8xiXRfA=" alt="Forest" width="600" height="100">
+    <div class="descs">Donate Books.<br>Books End,<br>Lives Begin.</div>
+</div> </button><!-- The Modal -->
+    <div id="myModa" class="moda">
+
+      <!-- Modal content -->
+      <div class="moda-content">
+        <span class="closes">×</span>
+        <h3 style="color: black;">BOOK DONATION</h3>
+Your Donation Will Help Children To Get Access For Quality Education. Donate Old Text Books & Note Books To Poor Students. Children need education to fight against poverty. Your donation will help us accomplish our mission of ensuring for child education. <br><br>
+
+When you donate your books, you allow the opportunity to let those texts have new life. Whether they end up in the hands of a young teen looking for an exciting new story to read, or they become part of a collection on someone else's shelf, donating your books expands their purpose and influence in a fascinating way.
+
+Share the gift of knowledge. Your donated books can make a huge diffrence, fill the form and donate used books today.<br><br>
+
+Who will pick up your books for free?
+Used book donations are accepted by a number of charities. Our website will help you find a charity in your area that will welcome your used book donations. Within minutes, you can schedule a fast, FREE pickup of your used book donations.<br>
+      </div>
+       </div>
+<script>
+    // Get the modal
+var moda = document.getElementById('myModa');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBt");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closes")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    moda.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    moda.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == moda) {
+        moda.style.display = "none";
+    }
+    }</script>
+
+
+<div class="gllery">
+    <button id="myB">
+      <img class="mgss"id="myB" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvOQMShjcDRY8xFbrxTeluV0pE0G4WjvJ95BHij08vuizNlxzP5jHyg6tNJnG5Lkx84w&usqp=CAU" alt="Northern Lights" width="600" height="400">
+    <div class="descss">The greatest GOOD<br> is what we do<br> for one another.</div>
+</div></button><!-- The Modal -->
+    <div id="myMod" class="mod">
+
+      <!-- Modal content -->
+      <div class="mod-content">
+        <span class="closess">×</span>
+        <h3 style="color: black;">HYGIENE ESSENTIALS DONATION</h3>
+        
+All it takes is a small donation to make a huge difference in someone’s life. Imagine not having access to a shower or toothbrush for days, or having a razor, feminine products, or clean undergarments when you need them most. This is the reality of many poor and neady families and people across the nation, including those experiencing homelessness.<br><br>
+
+Access to hygiene items greatly influences our overall health. Stronger self-esteem and confidence are just a couple of effects of establishing quality hygiene routines, like brushing teeth and hair. Self-awareness and esteem play large roles in our mental health wellness, making it important to prioritize actions that boost them.<br><br>
+
+There is a wide variety of hygiene items you should donate to charity that differ by purpose. From soap to face masks, lots of people take advantage of the array of health and safety items offered by charities and shelters.<br><br>
+
+Hygiene items should not be a used one it should be a new one. Sealed items are only accepted and this is very very important.<br><br>
+       </div>
+    </div>
+<script>
+    // Get the modal
+var mod = document.getElementById('myMod');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myB");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closess")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    mod.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    mod.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == moda) {
+        mod.style.display = "none";
+    }
+}</script></div>
+<div>
+<div class="galler">
+    <button id="m">
+      <img class="mgssss"id="m" src="https://thumbs.dreamstime.com/b/woman-stylish-handbag-cartoon-high-heel-shoes-vector-illustration-graphic-design-135440961.jpg" alt="Northern Lights" width="600" height="400">
+    <div class="descsss">Small Actions x <br>lots of people =<br> BIG DIFFERENCE</div>
+    <br>
+</div></button><!-- The Modal -->
+    <div id="yModa" class="o">
+
+      <!-- Modal content -->
+      <div class="o-content">
+        <span class="loses">×</span>
+        <h3 style="color: black;">SHOES AND BAGS DONATION</h3><br>
+      </div>
+       </div><script>
+    // Get the modal
+var o = document.getElementById('yModa');
+
+// Get the button that opens the modal
+var btn = document.getElementById("m");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("loses")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    o.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    o.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == o) {
+        o.style.display = "none";
+    }
+    }</script>
+<div class="gy">
+    <button id="my">
+      <img class="sss"id="my" src="https://media.istockphoto.com/vectors/charitable-toys-donation-for-kids-vector-id1223168917?k=6&m=1223168917&s=612x612&w=0&h=nb7x8arhR0-2OH_lyc3Ac0QK_0VvrfhxR8v-Uz7UhTA=" alt="Northern Lights" width="600" height="400">
+    <div class="descsss">You are born with the ability<br>to CHANGE someone's life<br>Don't ever waste it.</div>
+    <br>
+</div>
+</button><!-- The Modal -->
+    <div id="da" class="das">
+
+      <!-- Modal content -->
+      <div class="das-content">
+        <span class="oses">×</span>
+        <h3 style="color: black;">TOYS DONATION</h3>
+<br>
+      </div>
+       </div><script>
+    // Get the modal
+var das = document.getElementById('da');
+
+// Get the button that opens the modal
+var btn = document.getElementById("my");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("oses")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    das.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    das.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == das) {
+        das.style.display = "none";
+    }
+}</script></div>
+<div class="teas" style="margin-left:20px; margin-right: 20px "> .</div><br>
+<button class="button" style="text-decoration: none;"><a class="r" href="index.php"><b>DONATE TODAY!</b></a></button>
+<br><br><br>
+<a href="dashboard.php"></a>
+<div id="footer">
+    <br><a id="see">FOLLOW US ON</a><br><br>
+                <a id="p" href="http://www.twitter.com" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+                <a id="p" href="http://www.facebook.com" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+                <a id="p" href="http://www.google.com" class="icon-button google-plus"><i class="fa fa-google-plus"></i><span></span></a>
+                <a id="p" href="http://www.twitter.com" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a>
+                <a id="p" href="http://www.twitter.com" class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a><br>
+                <a id="see">For Further Details, Contact sreejasreenidhi88@gmail.com</a><br>
+            </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</div>
+    </body>
+</html>

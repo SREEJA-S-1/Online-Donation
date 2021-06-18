@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-May-2021, 5:21:43 pm
+    Author     : Home
+*/
+body{
+    background-image: url("data:image/jpeg;base64,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");
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+        background-size: cover;
+}
+.form{
+     width:470px; margin:0 auto; padding-left:50px; padding-top:40px;padding-bottom: 40px;
+        margin-top: 50px;background:#f1f1f1;
+}
+fieldset{border:0px; padding:0px; margin:0px;}
+ p.contact { font-size: 12px; margin:0px 0px 10px 0;line-height: 14px; font-family:Arial, Helvetica;}
+
+input[type="text"] { width: 400px; }
+input[type="email"] { width: 400px; }
+input[type="password"] { width: 400px; }
+ label { color: black; font-weight:bold;font-size: 15px;font-family:Arial, Helvetica; }
+ input, textarea { background-color: rgba(255, 255, 255, 0.4); border: 1px solid rgba(122, 192, 0, 0.15); padding: 7px; font-family: Keffeesatz, Arial; color:  black; font-size: 14px; -webkit-border-radius: 5px; margin-bottom: 15px; margin-top: -10px; }
+input:focus, textarea:focus { border: 1px solid #ff5400; background-color: rgba(255, 255, 255, 1); }
+.select-style {
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(images/select-arrow.png),
+    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 0px solid #FFF;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;}
+.gender {
+  width:410px;
+  }
+ input.buttom{ background: darkorange; display: inline-block; padding: 5px 10px 6px; color: #fbf7f7; text-decoration: none; font-weight: bold; line-height: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow: 0 1px 3px #999; -webkit-box-shadow: 0 1px 3px #999; box-shadow: 0 1px 3px #999; border: none; position: relative; cursor: pointer; font-size: 14px;}
+ input.buttom:hover	{ background-color: gold; }
+ /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}

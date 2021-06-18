@@ -1,0 +1,405 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-Mar-2021, 2:59:57 pm
+    Author     : Home
+*/
+body{
+    margin: 10px;
+    background-color: lightgray;
+}
+.tea{
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+button{
+
+    background-color: black;
+    margin-left: 600px;
+    color: white;
+    padding: 7px;
+    border-radius: 3px;
+}
+button:hover{
+    color: aquamarine;
+}
+.search__input{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: 90% center;
+        border-radius: 4px;
+        border: 1px solid #575756;
+        backface-visibility: hidden;
+        padding: 7px;
+        margin-right: 90px;
+         letter-spacing: 1.5px;
+          
+}
+a{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 3px;
+        position: relative;
+        padding-right: 25px;
+        text-decoration: none;
+        
+}
+a:hover{
+    color: aquamarine;
+}
+nav{
+    padding-left: 400px;
+    border: 10px black solid;
+    color: white;
+    background-color: black;
+}
+.teas{ 
+    border-radius: 15px; 
+    background-color: whitesmoke;
+    margin-top: 5px;
+    font-size: 7px;
+}
+* {
+  box-sizing: border-box;
+ 
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 32.9%;
+  padding: 10px;
+  height: 450px; 
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+.eat{
+    color: transparent;
+}
+.column-1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 450px; 
+  /* Should be removed. Only for demonstration */
+}
+.column-2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 450px; 
+  /* Should be removed. Only for demonstration */
+}
+#sea{
+    background-color: transparent;
+    color: black;
+}
+#sea:hover{
+    color: aquamarine;
+}
+.column-3 {
+  float: left;
+  width: 50%;
+  padding: 80px;
+  height: 450px; 
+}
+.column-4 {
+  float: left;
+  width: 50%;
+  padding: 100px;
+  height: 450px; 
+}
+.column-5 {
+  float: left;
+  width: 40%;
+  padding: 80px;
+  height: 400px; 
+}
+.column-6 {
+  float: left;
+  width: 60%;
+  padding: 60px;
+  height: 400px; 
+}
+#like {
+    padding-left: 50px;
+    display: table-cell;
+    position: relative;
+}
+
+@-webkit-keyframes pulse 
+{
+    from {
+        -webkit-transform: scale(1.0);
+        opacity: 1.0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        opacity: 1.0;
+    }
+    to { 
+        -webkit-transform: scale(1.0);
+        opacity: 1.0;
+    }
+}
+
+#heart:hover 
+{ 
+    -webkit-animation-name: pulse; 
+    -webkit-animation-duration: 0.5s; 
+    -webkit-animation-iteration-count: 2; 
+}
+#output
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+    margin-left: 20px;
+}
+#dislike {
+    display: table-cell;
+    position: relative;
+    padding-left: 20px;
+    
+}
+
+@-webkit-keyframes pulse 
+{
+    from {
+        -webkit-transform: scale(1.0);
+        opacity: 1.0;
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        opacity: 1.0;
+    }
+    to { 
+        -webkit-transform: scale(1.0);
+        opacity: 1.0;
+    }
+}
+
+#dheart:hover 
+{ 
+    -webkit-animation-name: pulse; 
+    -webkit-animation-duration: 0.5s; 
+    -webkit-animation-iteration-count: 2; 
+}
+#output1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+    margin-left: 20px; 
+}
+.free{
+    color: black;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.bee
+   { background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 3px;
+        position: relative;
+        padding-right: 25px;
+        text-decoration: none;
+        
+}
+.bee:hover{
+    color: aquamarine;
+}
+#footer{
+    border: 9px black solid;
+    background-color: black;
+    text-align: center;
+}
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 2.6rem;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+
+
+
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+.tumblr span {
+	background-color: #34526f;
+}
+.instagram span {
+	background-color: #517fa4;
+}
+.youtube span {
+	background-color: #bb0000;
+}
+.pinterest span {
+	background-color: #cb2027;
+}
+
+
+
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
+.icon-button .fa-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-tumblr {
+	color: #34526f;
+}
+.icon-button .fa-google-plus {
+	color: #db5a3c;
+}
+.icon-button .fa-instagram {
+	color: #517fa4;
+}
+.icon-button .fa-youtube {
+	color: #bb0000;
+}
+.icon-button .fa-pinterest {
+	color: #cb2027;
+}
+
+
+
+
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
+  }
+  body {
+
+	  padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
+#see{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 3px;
+        position: relative;
+        padding-right: 25px;
+        text-decoration: none;
+        
+}
+#se{
+    background-color: transparent;
+    color: darkslategray;
+}
+.ad{
+    margin-top: 30px;
+    text-align: center;
+    color: darkslategray;
+}
